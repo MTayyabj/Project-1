@@ -1,0 +1,248 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+  /* existing styles remain unchanged */
+  } 
+  
+  /* Left Section */
+  .contact-left {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .contact-left h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .contact-left p {
+    font-size: 16px;
+    color: aliceblue;
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Options */
+  .contact-options {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .contact-card {
+    background: #213448;;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    min-width: 180px;
+    transition: transform 0.2s;
+  }
+  
+  .contact-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .contact-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-card h3 {
+    font-size: 18px;
+    color: aliceblue;
+    margin-bottom: 10px;
+  }
+  
+  .contact-number {
+    font-size: 16px;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .contact-link {
+    display: block;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
+  .contact-button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .contact-button:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Right Section */
+  .contact-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .contact-image {
+    max-width: 100%;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  /* NEW DEVELOPMENT */
+   .social-icons11 {
+    margin-bottom: 0px;
+  } 
+  
+  .social-icons11 a {
+    margin: 5 10px;
+    text-decoration: none;
+  }
+  
+  .social-icons11 img {
+    width: 30px;
+    height: 30px;
+    padding: 0px 10px;
+  }
+  
+
+/* CASE STUDIES SECTION (Already looks good, but here’s a small enhancement) */
+.case-studies {
+  background-color: aliceblue;
+  padding: 40px 20px 150px 20px;
+  text-align: center;
+}
+
+.container {
+  background-color: aliceblue;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #213448;;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.12);
+}
+
+.image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.headline {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 15px;
+  color: grey;
+  margin-bottom: 15px;
+}
+
+.more-btn {
+  background: none;
+  color: #007bff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.more-btn:hover {
+  text-decoration: underline;
+}
+
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .contact-left {
+      max-width: 100%;
+    }
+  
+    .contact-options {
+      justify-content: center;
+    }
+  
+    .contact-card {
+      min-width: 100%;
+      max-width: 300px;
+    }
+  
+    .contact-right {
+      margin-top: 20px;
+    }
+  
+    .contact-image {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-left h2 {
+      font-size: 24px;
+    }
+  
+    .contact-left p {
+      font-size: 14px;
+    }
+  
+    .contact-card h3 {
+      font-size: 16px;
+    }
+  
+    .contact-button {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
+  }
+  

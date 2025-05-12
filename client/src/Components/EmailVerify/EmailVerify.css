@@ -1,0 +1,56 @@
+.end-container77 {
+    text-align: center;
+    padding: 0 ;
+
+     /* border: 2px solid red;  */
+}
+.end-container77 p {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color:#213448;
+}
+.OTP {
+ display: flex;
+  gap: 1vw;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+ 
+.OTP input {
+  width: 3.5vw;
+  height: 3.5vw;
+  /* max-width: 60px;
+  max-height: 60px; */
+  /* min-width: 40px;
+  min-height: 40px; */
+  text-align: center;
+  font-size: 2vw;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.OTP input:focus {
+  /* border-color: rgb(255, 105, 255); /* blue border on focus 
+  box-shadow: 0 0 5px rgb(183, 48, 183) ; */
+    border-color:#15579e;
+    box-shadow:0 0 5px #0e6ed3;
+}
+
+@media (max-width: 600px) {
+  .OTP input {
+  width: 30px;
+  height: 30px;
+  font-size: 17px;
+
+}
+
+}
+@media (max-width: 400px) {
+  input {
+    font-size: 20px;
+  }
+}

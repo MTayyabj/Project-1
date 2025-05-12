@@ -1,0 +1,159 @@
+/* body{
+    background-image: url('../../../Images/Page1.jpg'); /* Replace with the actual path to your image 
+} */
+
+/* Center the login container */
+.Login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* max-height: 100vh; */
+    /*max-width: 100%;  */
+    color: #213448;
+    padding: 7em 0em;
+} 
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.8); /* Adds slight transparency */
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* max-width: 400px; */
+    width: 100%;
+    height: auto; /* Set a fixed height for consistent size */
+    /* overflow-y: auto; Enable scrolling if content exceeds the height */
+}
+
+.Header h1{
+    font-size: 2.5rem;
+    color: #213448;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center
+}
+
+
+.Input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin: 0px;
+
+}
+
+.Label {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:#213448;;
+    padding: 1em 0em 0.5em 0.7em;
+    
+    /* border: 2px solid red; */
+}
+
+.Input input {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin: 0px;
+}
+
+.Input input:focus {
+    border-color: #213448;;
+}
+
+.Forgetpassword {
+    color: rgba(95, 73, 66, 100%);
+    text-align: center;
+    margin: 1em 0;
+    font-size: 1.3em;
+}
+
+.Forgetpassword span {
+    color: #6f42c1;
+    cursor: pointer;
+    padding-left: 1em;
+}
+
+.submit-container11 {
+    /* border: 2px solid black; */
+    padding: 2em 0em 0.8em 0em;
+    text-align: center;
+
+}
+
+/* .submit-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 45px;
+    background: rgba(95, 73, 66, 100%);
+    color: white;
+    border-radius: 25px;
+    font-size: 1.2em;
+    /* font-weight: 500; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    gap: 1em;
+    
+} 
+
+.submit-container:hover button {
+    background: rgba(95, 73, 66, 100%);
+    color: white;
+} */
+.end-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 ;
+
+     /* border: 2px solid red;  */
+}
+.end-container span {
+    color:rgb(183, 48, 183) ;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.end-container span:hover {
+    color: blue;
+    transition: color 0.3s ease;
+
+}
+
+.end-container p {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color:#213448;
+}
+.gray {
+    background: #ccc;
+    color: rgba(95, 73, 66, 100%);
+}
+
+
+  @media (max-width: 768px) {
+  .login {
+    padding: 7em 0em;
+  }
+  .Container {
+    padding: 1em;
+}
+    .end-container p {
+        padding: 0px;
+        font-size: 1em;
+    }
+        .end-container span {
+        padding: 0px;
+        font-size: 0.8em;
+    }
+}

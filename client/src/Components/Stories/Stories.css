@@ -1,0 +1,104 @@
+  .row22 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 10px 8em 10px;
+}
+.item11 { 
+    padding: 10px;
+    flex: 1; 
+    margin: auto;
+    min-width: 30%; /* Ensure minimum width */
+    height: 8em;
+    text-align: left;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+}
+.item11 h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #213448;
+    font-weight: bold;
+    margin: 0rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.item11 p {
+  text-align: center;
+
+} 
+  /* PRIVACY POLICY SECTION */
+.privacy-policy {
+  background: #ffffff;
+  color: #333;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.privacy-policy h1 {
+  font-size: 36px;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.privacy-policy h2 {
+  font-size: 24px;
+  color: #213448;;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-left: 4px solid #007bff;
+  padding-left: 10px;
+}
+
+.privacy-policy p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.privacy-policy ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.privacy-policy li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  list-style-type: disc;
+}
+
+@media (max-width: 600px) {
+  .row22 {
+  display: block;
+  }
+.item11 { 
+    padding: 10px;
+    flex: 1; 
+    margin: auto;
+    min-width: 30%; /* Ensure minimum width */
+    height: 8em;
+    text-align: left;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+}
+.item11 h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #213448;
+    font-weight: bold;
+    margin: 0rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item11 p {
+    text-align: center;
+
+}
+}
