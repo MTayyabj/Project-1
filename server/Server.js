@@ -23,9 +23,10 @@ app.get('/',(req,res)=> res.send("API is working wo hooo."));
 app.use('/api/auth', authRouter)
 app.use('/api/user', userRouter)
 
-if (process.env.NODE_ENV !== "production"){
-app.listen(port, ()=>console.log(`Server is listening on PORT ${port}`));
+if (process.env.NODE_ENV !== "production") {
+  const port = process.env.PORT || 4000;
+  app.listen(port, () => console.log(`Server is listening on PORT ${port}`));
 }
 
 //Export server for Vercel
-export default server;
+export default app;
