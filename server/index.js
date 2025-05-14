@@ -11,11 +11,11 @@ const port = process.env.PORT || 4000;
 connectDB();
 
 //ALLOWING TO COMMUNICATE WITH THIS API, WE CAN ADD MORE
-const allowedOrigins = ['http://localhost:5173']
+const allowedOrigins = ['https://project-1-q6dv.vercel.app/']
 
 app.use (express.json());
 app.use(cookieParser());
-app.use(cors(["*"]))
+app.use(cors({origin: allowedOrigins, credentials:true}))
 
 
 //API ENDPOINTS
