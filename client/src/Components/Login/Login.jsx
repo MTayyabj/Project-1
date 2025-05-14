@@ -30,7 +30,7 @@ export default function Login() {
      
                 //MAKING API CALL 
                 if (action === 'Sign up') {
-                    const { data } = await axios.post(backendUrl + 'api/auth/register', { name, email, password });
+                    const { data } = await axios.post(backendUrl + 'api/auth/register', { name, email, password },{withCredentials:true});
     
                     if (data.success) {
                         setIsLoggedin(true);
