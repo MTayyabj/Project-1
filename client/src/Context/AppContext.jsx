@@ -15,7 +15,7 @@ axios.defaults.withCredentials = true;
 
   const getAuthState= async () => {
     try{
-      const {data} = await axios.post(backendUrl +'api/auth/is-auth')
+      const {data} = await axios.post(backendUrl +'api/auth/is-auth', {withCredentials:true})
       if (data.success) {
         setIsLoggedin(true);
         getUserData();
@@ -30,7 +30,7 @@ axios.defaults.withCredentials = true;
   const getUserData = async () => {
     try {
       //MAKING API CALL
-      const { data } = await axios.get(backendUrl + 'api/user/data');
+      const { data } = await axios.get(backendUrl + 'api/user/data', {withCredentials:true});
       
       //SETTING USER DATA
       if (data.success) {
