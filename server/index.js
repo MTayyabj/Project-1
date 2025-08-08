@@ -16,7 +16,7 @@ const allowedOrigins = ['https://project-1-q6dv.vercel.app/']
 app.use (express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin:["http://localhost:4000", "https://project-1-q6dv.vercel.app"],
+  origin:["http://localhost:5173", "https://project-1-q6dv.vercel.app"],
   credentials:true
 }))
 
